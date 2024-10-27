@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 4px solid #00CED1;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #00CED1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#events-hero {
+    background-color: #00CED1;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#events-hero h2 {
+    font-size: 2.5rem;
+}
+
+#events-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Event Section */
+.event-section {
+    padding: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Change to column for better stacking */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text for better readability */
+}
+
+.event-section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.event-section img {
+    max-width: 80%; /* Increased max-width for better visibility */
+    border-radius: 10px;
+    margin: 20px 0; /* Margin adjusted for more space */
+}
+
+.event-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+.event-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.event-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.event-section ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.event-section ul li:before {
+    content: "🎉";
+    margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .event-section img {
+        max-width: 100%; /* Allow image to take full width */
+        margin: 10px 0; /* Reduced margin for smaller screens */
+    }
+}

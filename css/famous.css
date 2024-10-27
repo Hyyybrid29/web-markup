@@ -1,0 +1,157 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 4px solid #00CED1;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #00CED1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#famous-hero {
+    background-color: #00CED1;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#famous-hero h2 {
+    font-size: 2.5rem;
+}
+
+#famous-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Famous Person Cards */
+.famous-leidenaars-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #fff;
+}
+
+
+
+.famous-person-card {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.famous-person-card:hover {
+    transform: scale(1.05);
+}
+
+.famous-person-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #00CED1;
+}
+
+.famous-person-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.famous-person-card p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+.famous-person-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.famous-person-card ul li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #444;
+}
+
+.famous-person-card ul li:before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #00CED1;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .famous-leidenaars-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .famous-person-card {
+        width: 90%;
+        margin: 20px 0;
+    }
+}

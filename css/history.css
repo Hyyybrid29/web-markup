@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 4px solid #00CED1;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #00CED1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#history-hero {
+    background-color: #00CED1;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#history-hero h2 {
+    font-size: 2.5rem;
+}
+
+#history-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Era Section */
+.era-section {
+    padding: 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+}
+
+.era-section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.era-section img {
+    max-width: 80%; /* Adjusted for better visibility */
+    border-radius: 10px;
+    margin: 20px 0; /* Added margin for space */
+}
+
+.era-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+.era-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.era-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.era-section ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.era-section ul li:before {
+    content: "📜"; /* Historical icon */
+    margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .era-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .era-section img {
+        max-width: 100%; /* Allow image to take full width */
+        margin: 20px 0; /* Reduced margin for smaller screens */
+    }
+}

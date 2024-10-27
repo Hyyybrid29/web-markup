@@ -1,0 +1,220 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;          
+    letter-spacing: 0.5px;     
+    word-spacing: 1px;        
+    text-indent: 20px;         
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header and Footer */
+header {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 4px solid #00CED1;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #00CED1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 15px; 
+    background-color: #f4f4f4; 
+    text-align: center; 
+    position: relative; 
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #00CED1;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#hero img {
+    max-width: 100%; /* Ensure the image fits within the screen */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Interesting Facts Section */
+#interesting-facts {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#interesting-facts img {
+    max-width: 100%; /* Ensure the image fits within the screen */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#interesting-facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#interesting-facts li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* What to Expect Section */
+#what-to-expect {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+article {
+    max-width: 100%; /* Ensure article does not overflow */
+    margin: 20px 0;
+}
+
+/* Featured Events Section */
+#featured-events {
+    padding: 40px;
+    background-color: #fff;
+}
+
+#featured-events article {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Contact Us Section */
+#contact-us {
+    padding: 40px;
+    background-color: #00CED1;
+    color: white;
+    text-align: center;
+}
+
+.contact-button {
+    background-color: #fff;
+    color: #00CED1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #008b8b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+
+
+    #hero {
+        padding: 20px; /* Reduce padding */
+    }
+
+    #hero h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    #interesting-facts img,
+    #hero img {
+        max-width: 100%; /* Ensure images fit within the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    article {
+        margin: 10px 0; /* Adjust margin for articles */
+    }
+
+    .contact-button {
+        font-size: 1rem; /* Adjust button size */
+    }
+}
+
+.cookies-message {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999; 
+}
+
+.cookies-message p {
+    margin: 0;
+    padding: 0;
+}
+
+.cookies-message button {
+    background-color: #1b9cd7;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
